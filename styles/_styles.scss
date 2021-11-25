@@ -1,0 +1,84 @@
+body {
+    margin: auto;
+    max-width: 2000px;
+    scroll-behavior: smooth;
+    background: url(../images/forest.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+}
+hr {
+    height: 2px;
+    width: 80%;
+    border-width: 0px;
+    background-color: #143823;
+}
+.fa-chevron-down {
+    color: #F7F3E0;
+    font-size: 24px;
+    text-align: center;
+    transition: font-size .3s ease-in-out;
+}
+.fa-chevron-down:hover {
+    color: #6D8869;
+    font-size: 26px;
+}
+.gradient {
+    background: linear-gradient(to top, #6d8869, #5d7b5e, #4d6e53, #3e6149,
+    #2f543f, #264b38, #1e4232, #16392b, #133125, #0f2a20, #0c231a, #081c15) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 50px;
+}
+h1, h2, h3, h4, a {
+    font-family: 'Merienda', cursive;
+    color: #143823;
+    text-align: center;
+    letter-spacing: 2px;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #F7F3E0;
+    text-align: left;
+}
+
+h4 {
+    font-size: 36px;
+    text-align: left;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #F7F3E0;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+a {
+    font-size: 24px;
+    transition: font-size .3s ease-in-out;
+    text-decoration: none;
+}
+a:hover {
+    font-size: 25px;
+    color: #6D8869
+}
+.green-box {
+    height: fit-content;
+    background-color: #6D8869;
+    opacity: .7;
+    border-radius: 40px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
