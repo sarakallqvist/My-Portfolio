@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&family=Merienda:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
-rel="stylesheet">
-<script src="https://kit.fontawesome.com/0ebdbaeb66.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="styles/reset.css">
-<link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&family=Merienda:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0ebdbaeb66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
     <title>Sara's Portfolio</title>
 </head>
 <body>
@@ -55,22 +59,39 @@ rel="stylesheet">
             </div>
         </section>
         <section id="experience">
-
             <h4 id="experience-headline">Experience <hr></h4>
-            <div class="green-box box-studies">
-                <h3>Studies</h3>
-                <ul>
-                    <li> IT Project Management</li>
-                    <li> Front End Development</li>
-                </ul>
+
+            <button type="button" class="btn studies" data-bs-toggle="collapse" data-bs-target="#studies">
+                Studies &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i class="fas fa-chevron-down"></i></button>
+            <div id="studies" class="collapse">
+                <i class="fas fa-graduation-cap" id="cap-one"></i>
+                <p id="study-1a"> IT Project Manager</p>
+                <p id="study-1b"> Campus Mölndal | 2021-2022</p>
+                <i class="fas fa-graduation-cap" id="cap-two"></i>
+                <p id="study-2a"> Front End Developer</p>
+                <p id="study-2b"> Sundsgården Folkhögskola | 2021</p>
+                <i class="fas fa-graduation-cap" id="cap-three"></i>
+                <p id="study-3a"> Digital Marketing</p>
+                <p id="study-3b"> IHM Business School | 2016</p>
+                <i class="fas fa-graduation-cap" id="cap-four"></i>
+                <p id="study-4a"> Master in Marketing</p>
+                <p id="study-4b"> School of Business, Economics and Law | University of Gothenburg | 2009</p>
+                <i class="fas fa-graduation-cap" id="cap-five"></i>
+                <p id="study-5a"> Bachelor in Science in Business Administration</p>
+                <p id="study-5b"> School of Business, Economics and Law | University of Gothenburg | 2001-2008</p>
+                <i class="fas fa-graduation-cap" id="cap-six"></i>
+                <p id="study-6a"> Sociology</p>
+                <p id="study-6b"> University of Gothenburg | 2004-2005</p>
             </div>
-            <div class="green-box box-employment">
-                <h3>Employments</h3>
-                <ul>
-                    <li> Project Manager</li>
-                    <li> European Product Manager</li>
-                </ul>
+
+            <button type="button" class="btn employments" data-bs-toggle="collapse" data-bs-target="#employments">
+                Employments &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i class="fas fa-chevron-down"></i></button>
+            <div id="employments" class="collapse">
+                <i class="fas fa-briefcase" id="work-one"></i>
+                <p id="work-1a"> Project Manager</p>
+                <p id="work-1b"> Göteborg & Co | 2018-2020</p>
             </div>
+
             <div class="scroll-down__third">
                 <a href="#projects">
                     <i class="fas fa-chevron-down"></i>
@@ -91,5 +112,21 @@ rel="stylesheet">
 <footer>
 
 </footer>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
 </body>
 </html>

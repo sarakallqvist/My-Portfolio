@@ -20,7 +20,7 @@ hr {
     transition: font-size .3s ease-in-out;
 }
 .fa-chevron-down:hover {
-    color: #6D8869;
+    color: #1B4332;
     font-size: 26px;
 }
 .gradient {
@@ -62,6 +62,8 @@ p {
     color: #F7F3E0;
     letter-spacing: 1px;
     line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 a {
     font-size: 24px;
@@ -70,7 +72,7 @@ a {
 }
 a:hover {
     font-size: 25px;
-    color: #6D8869
+    color: #1B4332
 }
 .green-box {
     height: fit-content;
@@ -81,4 +83,36 @@ a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.btn {
+    background-color: #6D8869;
+    font-family: 'Merienda', cursive;
+    color:#F7F3E0;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px 10px 0px 10px;
+    width: 55%;
+    text-align: justify;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+.btn:hover {
+    background-color: #6D8869;
+    color: #1B4332;
+}
+.btn:focus {
+    background-color: #6D8869;
+    color: #F7F3E0;
+    box-shadow: none;
+    border-radius: 10px 10px 10px 10px;
+}
+.fa-graduation-cap {
+    font-size: 24px;
+    color: #F7F3E0;
+    text-align: center;
+}
+.fa-briefcase {
+    font-size: 24px;
+    color: #F7F3E0;
+    text-align: center;
 }
