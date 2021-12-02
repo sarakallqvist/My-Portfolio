@@ -44,7 +44,7 @@
         <section class="gradient" id="about">
             <div class="green-box box-about">
                 <div class="green-box-content-left">
-                    <h3>About Me</h3>
+                    <h3 id="about-headline">About Me</h3>
                     <p> I am a dedicated and ambitious project manager with extensive experience, mainly within marketing.
                         A passionately curious mind with a big interest in people, communication, IT and food.
                         I gladly take on new challenges and adapt quickly to new situations with a high sense of urgency.
@@ -89,16 +89,74 @@
             <div id="employments" class="collapse">
                 <i class="fas fa-briefcase" id="work-one"></i>
                 <p id="work-1a"> Project Manager</p>
-                <p id="work-1b"> Göteborg & Co | 2018-2020</p>
+                <p id="work-1b"> Göteborg & Co | 2017-2020</p>
+                <i class="fas fa-briefcase" id="work-two"></i>
+                <p id="work-2a"> European Product Manager</p>
+                <p id="work-2b"> Santa Maria | 2013-2016</p>
+                <i class="fas fa-briefcase" id="work-three"></i>
+                <p id="work-3a"> Marketing Coordinator</p>
+                <p id="work-3b"> Scan-Figus | 2010-2013</p>
+                <i class="fas fa-briefcase" id="work-four"></i>
+                <p id="work-4a"> Executive Assistant</p>
+                <p id="work-4b"> Baldursson | 2009-2010</p>
+                <i class="fas fa-briefcase" id="work-five"></i>
+                <p id="work-5a"> Customer Service Team Manager</p>
+                <p id="work-5b"> Maersk Group | 2006-2008</p>
+                <i class="fas fa-briefcase" id="work-six"></i>
+                <p id="work-6a"> Customer Service</p>
+                <p id="work-6b"> ICA Banken | 2004-2006</p>
             </div>
-
             <div class="scroll-down__third">
                 <a href="#projects">
                     <i class="fas fa-chevron-down"></i>
                 </a>
             </div>
         </section>
-        <section id="projects">
+        <section class="gradient" id="projects">
+            <h4 id="projects-headline">Projects <hr></h4>
+            <div class="card green-box" id="project-one">
+                <img src="./images/tiles.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Bhromaon</h5>
+                <p class="card-text"> A school project for a fictitious travel company. Complete website built with html and css.</p>
+                <a href="#" target="blank" class="btn btn-projects">See project</a>
+                </div>
+            </div>
+            <div class="card green-box" id="project-two">
+                <img src="./images/tiles.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Musician</h5>
+                <p class="card-text"> A school project for a fictitious musician. Complete website built with html and css.</p>
+                <a href="#" target="blank" class="btn btn-projects">See project</a>
+                </div>
+            </div>
+            <div class="card green-box" id="project-three">
+                <img src="./images/tiles.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Project 3 </h5>
+                <p class="card-text"> A school project. Complete website built with html and css.</p>
+                <a href="#" target="blank" class="btn btn-projects">See project</a>
+                </div>
+            </div>
+            <div class="card green-box" id="project-four">
+                <img src="./images/gbg-talks.jpg" class="card-img-top" alt="Gbg Talks">
+                <div class="card-body">
+                <h5 class="card-title">Gbg Talks</h5>
+                <p class="card-text"> A PR driven marketing campaign and event for Göteborg & Co, where I was the project manager.
+                    The campaign won an award at the Swedish Content Awards 2020</p>
+                <a href="https://dearfriends.se/sv/uppdrag/2019/gbgtalks/" target="blank" class="btn btn-projects">See project</a>
+                </div>
+            </div>
+            <div class="card green-box" id="project-five">
+                <img src="./images/santa-maria.jpg" class="card-img-top" alt="Santa Maria EFS">
+                <div class="card-body">
+                <h5 class="card-title">Santa Maria Extra Fine Spices</h5>
+                <p class="card-text"> A relaunch of premium spices and spice blends for the European market.
+                    I was the project manager for the project, which included development of new products, packaging and marketing content.</p>
+                <a href="https://www.santamariaworld.com/se/om-santa-maria/press/gamla-och-nya-kryddblandningar-far-nytt-utseende-och-forbattrat-innehall/" target="blank"
+                class="btn btn-projects">See project</a>
+                </div>
+            </div>
             <div class="scroll-down__fourth">
                 <a href="#contact">
                     <i class="fas fa-chevron-down"></i>
@@ -106,11 +164,40 @@
             </div>
         </section>
         <section id="contact">
-
+            <h4 id="contact-headline">Contact <hr></h4>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-phone"></i>
+            <i class="fas fa-map-marker-alt"></i>
+            <p id="mail-contact"> sarakallqvist@gmail.com</p>
+            <p id="phone-contact">+46-730 65 45 82</p>
+            <p id="location">Gothenburg, Sweden </p>
+            <div class="green-box contact-form">
+                <h3 id="contact-me">Send me a message!</h3>
+                <form action="#" class="form">
+                    <input type="text" name="name" id="name" class="input-field" placeholder="Name" required="">
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Email" required="">
+                    <textarea name="message" cols="30" rows="4" class="textarea" placeholder="Message"></textarea>
+                    <button type="submit" class="btn" id="submit">Submit</button>
+                </form>
+            </div>
         </section>
     </main>
-<footer>
+<footer class="gradient">
+    <div id="go-home">
+        <a href="#home">
+            <p id="back"><i class="fas fa-chevron-up"></i>
+             Back to Top</p>
+        </a>
+    </div>
+    <nav id="nav-footer">
+        <a href="https://www.linkedin.com/in/sarakallqvist/" id="linkedin" target="blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/sarakallqvist" id="github" target="blank"><i class="fab fa-github"></i></a>
+        <a href="#about" id="about-foot">About</a>
+        <a href="#experience" id="experience-foot">Experience</a>
+        <a href="#projects" id="projects-foot">Projects</a>
+        <a href="#contact" id="contact-foot">Contact</a>
 
+    </nav>
 </footer>
 <script>
     var coll = document.getElementsByClassName("collapsible");

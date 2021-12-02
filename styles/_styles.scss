@@ -13,13 +13,14 @@ hr {
     border-width: 0px;
     background-color: #143823;
 }
-.fa-chevron-down {
+.fa-chevron-down, .fa-chevron-up {
     color: #F7F3E0;
     font-size: 24px;
     text-align: center;
     transition: font-size .3s ease-in-out;
+    cursor: pointer;
 }
-.fa-chevron-down:hover {
+.fa-chevron-down:hover, .fa-chevron-up:hover {
     color: #1B4332;
     font-size: 26px;
 }
@@ -32,7 +33,7 @@ hr {
     margin: 0;
     padding: 50px;
 }
-h1, h2, h3, h4, a {
+h1, h2, h3, h4, h5, a {
     font-family: 'Merienda', cursive;
     color: #143823;
     text-align: center;
@@ -51,9 +52,13 @@ h3 {
     color: #F7F3E0;
     text-align: left;
 }
-
 h4 {
     font-size: 36px;
+    text-align: left;
+}
+h5 {
+    font-size: 24px;
+    color: #F7F3E0;
     text-align: left;
 }
 p {
@@ -115,4 +120,19 @@ a:hover {
     font-size: 24px;
     color: #F7F3E0;
     text-align: center;
+}
+.fa-envelope, .fa-phone, .fa-map-marker-alt {
+    font-size: 36px;
+    color: #081C15;
+    text-align: center;
+}
+.fa-linkedin-in, .fa-github {
+    color: #F7F3E0;
+    font-size: 36px;
+    text-align: left;
+    transition: font-size .3s ease-in-out;
+}
+.fa-linkedin-in:hover, .fa-github:hover {
+    color: #1B4332;
+    font-size: 38px;
 }
